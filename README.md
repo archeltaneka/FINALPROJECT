@@ -4,5 +4,8 @@
 Create a new repository and adds a flow chart
 
 --October 7th(4.56 PM)--
-1. Adds the WPM(words per minute) to the flow chart
-2. Adds the description of the program
+1. Added the WPM(words per minute) to the flow chart
+2. Added the description of the program
+
+--October 11th(6.13 PM)
+Edited the description of the program
