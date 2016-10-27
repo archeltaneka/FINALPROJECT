@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+int columnSpaces;
+int rowSpaces;
+int dotsIncrement;
+int dots = 1;
+
+for(columnSpaces = 1; columnSpaces <= 5; columnSpaces++)
+{
+for(rowSpaces = 4; rowSpaces >= columnSpaces; rowSpaces--)
+{
+cout << " ";
+}
+for(dotsIncrement = 0; dotsIncrement < dots; dotsIncrement++)
+{
+cout << "*";
+}
+cout << endl;
+dots += 2;
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+int num1;
+int num2;
+int total;
+
+cout << "input the first number: ";
+cin >> num1;
+cout << "input the second number: ";
+cin >> num2;
+
+total = num1 + num2;
+cout << "The total sum of the two number is: " << total;
+}
