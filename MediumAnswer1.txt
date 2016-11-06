@@ -14,4 +14,6 @@ cin >> num2;
 
 total = num1 + num2;
 cout << "The total sum of the two number is: " << total;
+
+return 0;
 }

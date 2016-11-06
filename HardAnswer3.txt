@@ -1,0 +1,43 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+double getHeight();
+double getRadius();
+double square(double);
+
+int main(){
+	
+double const phi = 3.15459;
+double radius;
+double height;
+double volume;
+	
+radius = getRadius();
+height = getHeight();
+volume = phi * square(radius) * height * 1/3;
+	
+cout << "The volume of the cone is: " << volume;
+return 0;
+}
+
+double getHeight()
+{
+double height;
+cout << "Enter height: ";
+cin >> height;
+return height;
+}
+
+double getRadius(){
+double radius;
+cout << "Enter radius: ";
+cin >> radius;
+return radius;
+}
+
+double square(double num){
+return num * num;
+}
+
+

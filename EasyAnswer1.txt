@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+int firstNum;
+int secondNum;
+
+cout << "Enter your first number: ";
+cin >> firstNum;
+cout << "Enter your second number: ";
+cin >> secondNum;
+
+if(firstNum == secondNum){
+cout << "Both numbers are identical";
+}else{
+cout << "Both numbers are not identical";
+}
+
+return 0;
+}

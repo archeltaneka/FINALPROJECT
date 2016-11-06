@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int function(int array[], int arraySize, int n);
+
+int main(){
+	
+const int ARRAY_SIZE = 5;
+int array[ARRAY_SIZE] = {6, 7, 8, 9, 10};
+int n = 3;
+	
+function(array, ARRAY_SIZE, n);	
+}
+	
+int function(int array[], int arraySize, int n)
+{
+for(int i = 3; i < arraySize; i++)
+{
+if(i > n){
+cout << arraySize << endl;
+}
+}
+}

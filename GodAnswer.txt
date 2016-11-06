@@ -1,0 +1,42 @@
+#include <cassert>
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+class Cpu{
+public:
+virtual int dummy(int, int){}
+private:
+virtual int add_(int a, int b) {return a + b;}
+virtual int sub_(int a, int b) {return a - b;}
+virtual int mul_(int a, int b) {return a * b;}
+virtual int div_(int a, int b) {return a / b;}
+virtual int mod_(int a, int b) {return a % b;}
+virtual int and_(int a, int b) {return a & b;}
+virtual int or_(int a, int b) {return a | b;}
+virtual int xor_(int a, int b) {return a ^ b;}
+};
+
+int main(){
+typedef int (Cpu::*Memfun)(int, int);
+
+union{
+Memfun fn;
+unsigned char ptr[6];
+}u;
+
+Cpu cpu;
+u.fn = &Cpu::dummy;
+assert(argc == 4);
+
+int p1 = atoi(argv[1]);
+int p2 = atoi(argv[3]);
+char op = argv[2][0];
+
+assert(op >= 'A' && op <= 'H');
+u.ptr[0] = 1 + 4 * (op - 'A' + 1);
+
+cout << "The answer is " << ((cpu.*(u.fn))(p1, p2)) << endl;
+
+return 0;
+}

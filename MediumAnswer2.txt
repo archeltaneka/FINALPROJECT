@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+int number;
+
+cout << "Enter a number: ";
+cin >> number;
+
+if(number == 1){
+cout << "My subject";
+}else if(number == 2){
+cout << "Lecturer/Facilitator";
+}else if(number == 3){
+cout << "Shared Materials";
+}else{
+cout << "Invalid number!";
+}
+}

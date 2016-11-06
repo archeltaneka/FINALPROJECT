@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+unsigned int distance;
+unsigned int speed;
+unsigned int time;
+int i;
+	
+cout << "Enter a speed of a vehicle in mph: \n";
+cin >> speed;
+cout << "How many hours has it traveled? \n";
+cin >> time;
+for(i = 1; i <= time; i++){
+distance = speed * i;
+cout << i << " hours(s)" << " " << distance << " distance traveled" << endl;
+}
+return 0;	
+}
